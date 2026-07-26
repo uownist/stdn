@@ -451,3 +451,23 @@ console.log(revArrNames(["ownist", "shahed", "kaka"]));
  * friday, july 24
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * sunday, july 26
+ * ====================
+ */
+function printOneToTen() {
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
+}
+
+printOneToTen();
+/**
+ * ====================
+ * sunday, july 26
+ * ====================
+ */
