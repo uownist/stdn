@@ -471,3 +471,23 @@ printOneToTen();
  * sunday, july 26
  * ====================
  */
+
+console.log("\n"); // create a new empty line for better understanding
+
+/**
+ * ====================
+ * wednesday, july 29
+ * ====================
+ */
+function printUserSays(userNum) {
+  for (let i = 1; i <= userNum; i++) {
+    console.log(i);
+  }
+}
+
+printUserSays(32);
+/**
+ * ====================
+ * wednesday, july 29
+ * ====================
+ */
