@@ -1,0 +1,104 @@
+h1,h2,h4,h3,h5{
+    font-family: "Michroma", sans-serif!important;
+}
+/*start nav*/
+.menu {
+   width: 60%;
+}
+.menu li{
+   width: 30%;
+}
+.menu a{
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    margin-left: 10px;
+    color: #000;
+    border-radius: 0px;
+    background-color: #d2eaef;
+}
+.menu a:hover{
+    padding: 20px;
+    display: block;
+    color: #ffffff;
+    background: #106b95;
+    border-radius: 10px ;
+}
+
+
+.hot-line i{
+    color: green;
+    width: 45px;
+    padding:10px;
+    background: #b9efc7;
+    border-radius: 20px;
+
+}
+.hot-line i:hover{
+    background-color: #2f4906;
+    color: white;
+}
+/*end nav*/
+
+/*start slider*/
+.slider img{
+    height: 500px;
+}
+/*end slider*/
+
+/*start quiz*/
+.quiz-ans i{
+    font-size: 35px;
+    color: darkgreen;
+}
+/*end quiz*/
+
+/*star plant collage*/
+
+.plant-card img{
+    transition: transform 0.5s;
+    width: 100%;
+    height: 250px;
+}
+.plant-card img:hover{
+    transform: scale(1.1);
+}
+
+/*end plant collage*/
+
+
+.title-section{
+    margin-top: 75px;
+}
+
+/*start About page*/
+
+.title-section{
+    margin-top: 75px;
+}
+.text-justify{
+    text-align: justify;
+}
+/*end About page*/
+
+/*start meet-people*/
+.meet-people .card i{
+    font-size: 64px;
+    background: #b0ecb0;
+    width: 130px;
+    height: 130px;
+    border-radius: 85px;
+    padding: 26px;
+    color: #085408;
+}
+/*end meet-people*/
+/*product*/
+.mt-30{
+    margin-top: 30px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mb-30{
+    margin-bottom: 80px;
+}
