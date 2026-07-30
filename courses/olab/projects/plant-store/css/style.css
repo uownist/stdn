@@ -1,0 +1,112 @@
+/*start nav*/
+.menu ul {
+    width: 70%;
+}
+.menu ul li{
+    width: 25%;
+}
+.menu a{
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+    color: #155c18;
+}
+.menu a:hover{
+    padding: 20px;
+    display: block;
+    color: #ffffff;
+    background: #155c18;
+}
+
+
+.hot-line i{
+    color: green;
+    width: 45px;
+    padding:10px;
+    background: #b9efc7;
+    border-radius: 20px;
+
+}
+.hot-line i:hover{
+    background-color: #2f4906;
+    color: white;
+}
+/*end nav*/
+
+/*start slider*/
+.slider img{
+    height: 700px;
+}
+/*end slider*/
+
+/*star plant collage*/
+
+.plant-card img{
+    width: 100%;
+    height: 250px;
+    transition: transform 0.5s;
+}
+.plant-card img:hover{
+    transform: scale(1.1);
+}
+
+/*end plant collage*/
+
+.popular-plant img{
+    height: 250px;
+}
+/*start feature*/
+.feature img{
+    height: 250px;
+}
+/*end feature*/
+.monitoring img{
+    height: 250px;
+}
+.crop-info img{
+    height: 200px;
+}
+.mt-65{
+    margin-top: 67px;
+}
+
+/*start meet-people*/
+.meet-people .card i{
+    font-size: 64px;
+    background: #b0ecb0;
+    width: 130px;
+    height: 130px;
+    border-radius: 85px;
+    padding: 26px;
+    color: #085408;
+}
+/*end meet-people*/
+
+
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-box .user-message,
+.chat-box .bot-message {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+}

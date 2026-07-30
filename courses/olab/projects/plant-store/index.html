@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <!--star navbar-->
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top shadow bg-body-tertiary p-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand p-0" href="index.html">
+                        <img src="images/logo.png" class="w-25" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link  active bg-success" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--end navbar-->
+
+        <!--    star slider section-->
+        <section class="mt-65">
+            <div class="container-fluid slider">
+                <div class="row">
+                    <div class="col-md-12 p-0">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/slider-1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slider-2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slider-3.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    end slider section-->
+
+        <div class="container">
+        <!--start  plant matchmaker quiz-->
+            <section>
+                <div class="row mt-5">
+                    <div class="col-md-6 shadow p-0">
+                        <h2 class=" text-center p-3 bg-success-subtle">Find Your Perfect Plant!</h2>
+
+                        <form class="form-control p-4 border-0" id="plantQuiz" action="">
+                            <p>Take our <b>Plant Matchmaker Quiz</b>
+                                and discover plants recommended just for your space and lifestyle
+                            </p>
+                            <p>
+                                <strong>How much sunlight does your space get?</strong>
+                            </p>
+                            <select id="sunlight" class="form-select mb-4">
+                                <option selected>Select One</option>
+                                <option value="low">Low Light</option>
+                                <option value="medium">Medium Light</option>
+                                <option value="high">Bright Direct Sun</option>
+                            </select>
+                            <p>
+                                <strong>Preferred Care Level</strong>
+                            </p>
+                            <select id="care" class="form-select mb-4" >
+                                <option selected>Select One</option>
+                                <option value="easy">Low Maintenance</option>
+                                <option value="moderate">Moderate Care</option>
+                                <option value="high">High Attention</option>
+                            </select>
+                            <p>
+                                <strong>Need pet-friendly plants?</strong>
+                            </p>
+                            <select id="pets" class="form-select mb-4">
+                                <option selected>Select One</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                            <input type="submit" class="btn btn-success w-100" value="Find My plants">
+                        </form>
+                    </div>
+                    <div class="col-md-6 mt-25">
+                        <div class="text-center p-5 bg-info-subtle quiz-ans">
+                            <h2 class="text-dark">Recommended Plants For You</h2>
+                            <i class="fa-solid fa-sun-plant-wilt"></i>
+                        </div>
+                        <div id="result" class="mt-4 text-center"></div>
+
+                    </div>
+                </div>
+            </section>
+        <!--end  plant matchmaker quiz-->
+        </div>
+
+        <!-- start plant collage-->
+        <section class="bg-light mt-5">
+            <div class="container p-4">
+                <div class="row plant-card g-5">
+                    <div class="col-md-12 text-center">
+                        <h2>Explore Our Green World</h2>
+                        <p class="text-muted">Indoor . Outdoor . Tropical</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="images/p-11.jpg" class="img-fluid shadow rounded"  alt="">
+                            <span  class="badge bg-success position-absolute  start-50 top-50 translate-middle  ">
+                                Indoor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="images/p-6.jpg" class="img-fluid shadow rounded"  alt="">
+                            <span class="badge bg-success position-absolute top-50 start-50 translate-middle">
+                                Outdoor
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="images/p-4.jpg" class="img-fluid shadow rounded"  alt="">
+                            <span class="badge bg-success position-absolute top-50 start-50 translate-middle p-3 ">
+                                Tropical
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-relative">
+                            <img src="images/p-8.jpg" class="img-fluid shadow rounded"  alt="">
+                            <span class="badge bg-success position-absolute top-50 start-50 translate-middle">
+                                Indoor
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--  end plant collage-->
+
+        <!-- start popular houseplant-->
+         <section class="mt-5">
+             <div class="container">
+                 <div class="row g-5 popular-plant pb-5">
+                     <div class="col-md-12 wow fadeOutDown text-center">
+                         <h2 class="">
+                             <i class="fa-brands fa-pagelines text-success"></i>
+                             Popular Houseplant
+                         </h2>
+                     </div>
+                     <div class="col-md-3 wow  fadeInLeft ">
+                         <div class="card h-100 shadow-sm">
+                             <img src="images/p-6.jpg" class="card-img-top" alt="">
+                             <div class="card-header">
+                                 <h3>Monstera</h3>
+                             </div>
+                             <div class="card-body">
+                                 <p>Easy care,bold tropical leaves.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                         <div class="card h-100 shadow-sm">
+                             <img src="images/p-11.jpg" class="card-img-top" alt="">
+                             <div class="card-header">
+                                 <h3>Snake Plant</h3>
+                             </div>
+                             <div class="card-body">
+                                 <p>Low light,bold tropical leaves.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                         <div class="card h-100 shadow-sm">
+                             <img src="images/pothos.jpg" class="card-img-top" alt="">
+                             <div class="card-header">
+                                 <h3>Pothos Plant</h3>
+                             </div>
+                             <div class="card-body">
+                                 <p>Low light,bold tropical leaves.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-3">
+                         <div class="card h-100 shadow-sm">
+                             <img src="images/lily.jpg" class="card-img-top" alt="">
+                             <div class="card-header">
+                                 <h3>Peace Lily</h3>
+                             </div>
+                             <div class="card-body">
+                                 <p>Low light,bold tropical leaves.</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+        <!-- end popular houseplant-->
+
+        <!-- start curated collections-->
+        <section class="bg-light mt-5">
+            <div class="container">
+                <div class="row g-5 pb-5">
+                    <div class="col-md-12 text-center">
+                        <h2>
+                            <i class="fa-solid fa-leaf text-success"></i>
+                            Curated Collection
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/p-1.jpg" class="card-img-top" alt="">
+                            <div class="card-header">
+                                <h3>Pet-Friendly Plants</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, qui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/p-2.jpg" class="card-img-top img-thumbnail" alt="">
+                            <div class="card-header">
+                                <h3>Low Maintenance Set</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/p-3.jpg" class="card-img-top" alt="">
+                            <div class="card-header">
+                                <h3>Air-Purifying Plants</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end curated collections-->
+
+        <!-- start plant care guides-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row g-5 pb-5">
+                    <div class="col-md-12 text-center">
+                        <h2>
+                            <i class="fa-solid fa-leaf text-success"></i>
+                            Plant Care Guides
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success-subtle text-center">
+                                <h3>Watering Guide</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, qui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success-subtle text-center">
+                                <h3>Lightening Essentials</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-success-subtle text-center">
+                                <h3>Soil And Fertilizer</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end plant care guides-->
+
+        <!-- start about blooming oasis-->
+            <section class="bg-light mt-5">
+                <div class="container">
+                    <div class="row pb-4">
+                        <h2 class="text-center p-4">
+                            <i class="fa-solid fa-clover text-danger"></i>
+                            About Blooming Oasis
+                        </h2>
+                        <div class="col-md-6">
+                            <p>
+                                "Blooming Oasis" is a versatile phrase describing vibrant, lush, flower-filled gardens, parks (like the famous Ta Shee Blooming Oasis in Taiwan), or even a metaphorical lush spot in a desert, used as a name for various businesses like landscaping services, home decor items, soaps, and artwork, symbolizing natural beauty and tranquility. It evokes images of abundant flowers, rich greenery, and peaceful escapes, often used in branding to convey freshness and life.
+                            </p>
+                            <p>
+                                "Blooming Oasis" is a versatile phrase describing vibrant, lush, flower-filled gardens, parks (like the famous Ta Shee Blooming Oasis in Taiwan), or even a metaphorical lush spot in a desert, used as a name for various businesses like landscaping services, home decor items, soaps, and artwork, symbolizing natural beauty and tranquility. It evokes images of abundant flowers, rich greenery, and peaceful escapes, often used in branding to convey freshness and life.
+                            </p>
+                            <p>
+                                "Blooming Oasis" is a versatile phrase describing vibrant, lush, flower-filled gardens, parks (like the famous Ta Shee Blooming Oasis in Taiwan), or even a metaphorical lush spot in a desert, used as a name for various businesses like landscaping services, home decor items, soaps, and artwork, symbolizing natural beauty and tranquility. It evokes images of abundant flowers, rich greenery, and peaceful escapes, often used in branding to convey freshness and life.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/about.jpg" class="img-fluid rounded w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- end about blooming oasis-->
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row bg-secondary-subtle mt-5 p-4">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            &copy;OLAB
+                        </p>
+                        <p class="text-center" id="displayDateTime"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+
+        </script>
+
+
+    </body>
+</html>                                                                                                                                                                                                                                                                                                                             
