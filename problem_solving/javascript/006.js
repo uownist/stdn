@@ -1,4 +1,10 @@
-// check palindrome
+/**
+ * -----------------------
+ * check palindrome
+ * -----------------------
+ */
+
+// solution: 01
 function isPalindrome(str) {
   const lowerStr = str.toLowerCase();
 
@@ -28,3 +34,23 @@ function isPalindrome(str) {
 const input = "Madam";
 const output = isPalindrome(input);
 console.log(output);
+
+console.log("\n");
+
+// solution: 02
+function checkPalindrome(str) {
+  let cleanStr = "";
+  let reversedStr = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== " ") cleanStr += str[i].toLowerCase();
+  }
+
+  for (let i = cleanStr.length - 1; i >= 0; i--) {
+    reversedStr += cleanStr[i];
+  }
+
+  return cleanStr === reversedStr;
+}
+
+console.log(checkPalindrome("Madam"));
