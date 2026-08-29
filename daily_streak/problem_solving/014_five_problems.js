@@ -21,3 +21,20 @@ function getLastItem(arr) {
 }
 
 console.log(getLastItem(["0", "5", "78"]));
+
+console.log("\n");
+
+// get traffic action
+function getTrafficAction(color) {
+  if (color === "red") {
+    return "Stop";
+  } else if (color === "yellow") {
+    return "Get Ready";
+  } else if (color === "green") {
+    return "Go";
+  } else {
+    return "Unknown color";
+  }
+}
+
+console.log(getTrafficAction("green"));
