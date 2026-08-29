@@ -38,3 +38,12 @@ function getTrafficAction(color) {
 }
 
 console.log(getTrafficAction("green"));
+
+console.log("\n");
+
+// get user info
+function getUserInfo(user) {
+  return `${user.name} lives in ${user.city}`;
+}
+
+console.log(getUserInfo({ name: "Shahed", city: "America" }));
