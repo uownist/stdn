@@ -13,3 +13,18 @@ function joinWithDash(arr) {
 }
 
 console.log(joinWithDash(["s", "h", "a"]));
+
+console.log("\n");
+
+// reverse string
+function reversString(str) {
+  let revStr = "";
+
+  for (const char of str) {
+    revStr = char + revStr;
+  }
+
+  return revStr;
+}
+
+console.log(reversString("uownist"));
