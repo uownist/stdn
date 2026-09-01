@@ -1,1 +1,0 @@
-## ei folder ta holo amr second semester er semester final python xm er preparation hisebe code practice kortesi :)
