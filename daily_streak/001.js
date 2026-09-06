@@ -38,3 +38,15 @@ function shortenText(text, maxLength) {
 }
 
 console.log(shortenText("uownist", 5));
+
+console.log("\n");
+
+// 4. detect bad words
+function containsBadWord(text) {
+  if (text.toLowerCase().includes("bad")) return true;
+
+  return false;
+}
+
+console.log(containsBadWord("This is BAD."));
+console.log(containsBadWord("This is good btw."));
