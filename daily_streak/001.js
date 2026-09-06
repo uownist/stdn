@@ -50,3 +50,14 @@ function containsBadWord(text) {
 
 console.log(containsBadWord("This is BAD."));
 console.log(containsBadWord("This is good btw."));
+
+console.log("\n");
+
+// 4. make slug
+function makeSlug(title) {
+  return title.toLowerCase().trim().split(" ").join("-");
+}
+
+console.log(makeSlug("   js is fun  "));
+console.log(makeSlug("Hello World"));
+console.log(makeSlug("one"));
