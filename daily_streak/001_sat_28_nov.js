@@ -25,3 +25,16 @@ function isImageFile(filename) {
 
 console.log(isImageFile("ma_dp.png"));
 console.log(isImageFile("linkedin_dp.webp"));
+
+console.log("\n");
+
+// 3. shorten text
+function shortenText(text, maxLength) {
+  if (text.length > maxLength) {
+    return `${text.slice(0, maxLength)}...`;
+  } else {
+    return text;
+  }
+}
+
+console.log(shortenText("uownist", 5));
