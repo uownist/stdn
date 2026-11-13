@@ -17,3 +17,7 @@ print(f"{num_one} x {num_two} = {mult}")
 # division
 div = num_one / num_two
 print(f"{num_one} / {num_two} = {int(div)}")
+
+# reminder
+rem = num_one % num_two
+print(f"{num_one} % {num_two} = {rem}")
