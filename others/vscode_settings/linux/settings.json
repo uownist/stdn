@@ -4,57 +4,35 @@
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "editor.cursorSmoothCaretAnimation": "on",
-  // "editor.fontFamily": "JetBrains Mono",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontLigatures.enabled": true,
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
   "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
   "editor.smoothScrolling": true,
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
-  "editor.stickyScroll.enabled": false,
   "editor.stickyScroll.scrollWithEditor": false,
+  "editor.stickyScroll.enabled": false,
   "workbench.tree.enableStickyScroll": false,
   "terminal.integrated.stickyScroll.enabled": false,
   "workbench.productIconTheme": "material-product-icons",
-  "license.author": "Shahed Bishwas (@ownist)",
-  "git.enableSmartCommit": true,
   "terminal.integrated.initialHint": false,
-  "terminal.integrated.profiles.linux": {
-    "bash": {
-      "path": "bash",
-      "icon": "terminal-bash"
-    },
-    "zsh": {
-      "path": "/usr/bin/zsh"
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
-    }
-  },
-  "terminal.integrated.defaultProfile.linux": "zsh",
   "workbench.editor.empty.hint": "hidden",
   "workbench.panel.showLabels": false,
   "markdown.preview.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
+  "chat.editor.fontSize": 16,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "chat.disableAIFeatures": true,
+  "explorer.compactFolders": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
   "editor.fontSize": 16,
-  "code-runner.runInTerminal": true,
-  "explorer.confirmPasteNative": false,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.fontFamily": "Fira Code",
-  "chat.disableAIFeatures": true,
-  "explorer.compactFolders": false,
-  "workbench.colorTheme": "Learn with Sumit - Shades of Grey"
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "One Dark Pro Flat"
 }
