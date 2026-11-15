@@ -22,7 +22,7 @@ print("\n")
 # ------------
 # pass
 # ------------
-for i in range(1, 7):
+for i in range(1, 21):
     if i == 5:
         pass
     print(i)
