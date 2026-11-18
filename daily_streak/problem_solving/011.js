@@ -30,3 +30,10 @@ console.log(output);
 /**
  * note: ei problem er ami aga matha gora h**a kicchui buji nai :) plz map kardejiye
  */
+
+// even or odd
+function evenOrOdd(num) {
+  return num % 2 === 0;
+}
+
+console.log(evenOrOdd(23));
