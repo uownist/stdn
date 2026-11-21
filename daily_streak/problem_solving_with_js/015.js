@@ -28,3 +28,19 @@ function reversString(str) {
 }
 
 console.log(reversString("uownist"));
+
+console.log("\n");
+
+// greeting user
+function greetingUser(user) {
+  return user.isLoggedIn === true
+    ? `Welcome ${user.name}`
+    : `${user.name} please Login first`;
+}
+
+console.log(
+  greetingUser(
+    { name: "uownist", isLoggedIn: true },
+    // { name: "Shahed", isLoggedIn: false },
+  ),
+);
